@@ -11,6 +11,5 @@
 - [x] Friends (friends v2)
 - [x] Matchmaker & XMPP
 - [x] In-Game Reports
-- [x] Change lobby background in chapter 2+
 - [x] Battle Pass
 - [ ] Challenges (or Quests)
