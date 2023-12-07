@@ -1,0 +1,28 @@
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\bin\Debug\net8.0-windows\OGFN Launcher.exe
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\bin\Debug\net8.0-windows\OGFN Launcher.deps.json
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\bin\Debug\net8.0-windows\OGFN Launcher.runtimeconfig.json
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\bin\Debug\net8.0-windows\OGFN Launcher.dll
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\bin\Debug\net8.0-windows\OGFN Launcher.pdb
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\bin\Debug\net8.0-windows\DiscordRPC.dll
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\bin\Debug\net8.0-windows\Ookii.Dialogs.Wpf.dll
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\bin\Debug\net8.0-windows\RestSharp.dll
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\bin\Debug\net8.0-windows\Wpf.Ui.dll
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\OGFN Launcher.csproj.AssemblyReference.cache
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\OGFN Launcher_MarkupCompile.cache
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\OGFN Launcher_MarkupCompile.lref
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\OGFN Launcher.g.resources
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\OGFN Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\OGFN Launcher.AssemblyInfoInputs.cache
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\OGFN Launcher.AssemblyInfo.cs
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\OGFN Launcher.csproj.CoreCompileInputs.cache
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\OGFN Launcher.sourcelink.json
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\OGFN Launcher.csproj.CopyComplete
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\OGFN Launcher.dll
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\refint\OGFN Launcher.dll
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\OGFN Launcher.pdb
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\OGFN Launcher.genruntimeconfig.cache
+C:\Users\peter\Desktop\github\Project ReviveFN\Launcher\OGFN Launcher\OGFN Launcher\obj\Debug\net8.0-windows\ref\OGFN Launcher.dll
