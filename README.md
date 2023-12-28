@@ -10,7 +10,7 @@
     - [x] Cloud storage for settings
     - [x] Friends
     - [x] Basic Matchmaker & XMPP
+    - [x] Challenges (or Quests)
     - [ ] Control panel for server admins
     - [ ] In-Game Reports
     - [ ] Battle Pass
-    - [ ] Challenges (or Quests)
