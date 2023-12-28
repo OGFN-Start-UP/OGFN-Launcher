@@ -1,0 +1,102 @@
+﻿<Window x:Class="og.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:local="clr-namespace:og"
+        mc:Ignorable="d"
+        Background="{DynamicResource ApplicationBackgroundBrush}"
+        Style="{DynamicResource UiWindow}"
+        WindowStartupLocation="CenterScreen"
+    Title="OG Launcher" Height="600" Width="918" MinHeight="600" MinWidth="1050" MaxHeight="600" MaxWidth="1050">
+    <Grid x:Name="AlwaysVisible" Visibility="Visible">
+
+        <Grid x:Name="Navigation" Visibility="Visible" Margin="0,0,955,0">
+            <ui:CardControl x:Name="Go_Home" IsEnabled="False" Click="Go_Home_Click" HorizontalAlignment="Center" Margin="0,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.469,-0.907" Width="74" Height="531">
+            </ui:CardControl>
+            <ui:Button Content="" Click="Go_Home_Click" Icon="Home24" Margin="0,63,0,0" VerticalAlignment="Top" Height="50" Width="56" HorizontalAlignment="Center"/>
+            <ui:Button Click="Logout_Click" Appearance="Danger" Content="" Icon="ArrowExit20" Height="50" Width="56" HorizontalAlignment="Center" Margin="0,521,0,0" VerticalAlignment="Top"/>
+            <ui:Button Click="GoSettingsClick" Content="" Icon="Settings32" Height="50" Width="56" HorizontalAlignment="Center" Margin="0,466,0,0" VerticalAlignment="Top"/>
+
+        </Grid>
+
+        <Grid x:Name="Login" Visibility="Hidden">
+            <Ellipse Width="100" Height="100" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,115,0,0">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/ogLogo.png"  />
+                </Ellipse.Fill>
+            </Ellipse>
+            <Label Content="Please enter your OG-FN login info here:" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Margin="0,217,0,0"/>
+            <ui:TextBox x:Name="EmailTxt" PlaceholderText="Please enter email here..." Margin="231,261,231,0" VerticalAlignment="Top"/>
+            <ui:PasswordBox x:Name="PasswordTxt"  PlaceholderText="Please enter password here..." Margin="231,315,231,0" VerticalAlignment="Top"/>
+
+            <ui:Button x:Name="Login_Btn" Click="Login_Click" Appearance="Success" Content="Login" Margin="0,364,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.506,0.999" Width="588" HorizontalAlignment="Center"/>
+
+        </Grid>
+
+        <Grid x:Name="Home" Margin="95,21,0,-21" Visibility="Visible">
+            <Ellipse Width="95" Height="95" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,57,0,0">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="CidIco"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <ui:CardControl Content="" IsEnabled="False" Margin="10,53,14,0" VerticalAlignment="Top" Height="103"/>
+            <Label Content="Launch OG" FontSize="18" HorizontalAlignment="Left" Margin="61,181,0,0" VerticalAlignment="Top" Foreground="White"/>
+            <ui:CardControl Content="" Click="LaunchFortniteGame" Icon="Rocket24" HorizontalAlignment="Right" Margin="0,163,14,0" VerticalAlignment="Top" Width="931" FontSize="18"/>
+            <Label x:Name="WelcomeMessage" Content="Welcome Player!" FontSize="18" HorizontalAlignment="Left" Margin="140,92,0,0" VerticalAlignment="Top" Foreground="White" />
+        </Grid>
+
+        <Grid x:Name="Settings" Visibility="Hidden" Margin="95,0,0,0">
+            <ui:CardControl Content="" IsEnabled="False" HorizontalAlignment="Center" Margin="0,53,0,0" VerticalAlignment="Top" Width="935" Height="98"/>
+            <Label Content="Settings" FontSize="18" HorizontalAlignment="Left" Margin="28,93,0,0" VerticalAlignment="Top" Background="Transparent" Foreground="White" Width="69"/>
+            <ui:CardControl Content="" IsEnabled="False" HorizontalAlignment="Left" Margin="9,299,0,0" Height="131" Width="342" VerticalAlignment="Top"/>
+            <Label Content="Custom Launch Arguments:" HorizontalAlignment="Left" Margin="63,310,0,0" VerticalAlignment="Top" FontSize="18" Foreground="White"/>
+            <ui:TextBox x:Name="CustomArgs" PlaceholderText="Please enter Custom Launch Arguments here..." Margin="17,347,614,0" VerticalAlignment="Top"/>
+            <ui:Button Click="CustomArgsSave" Content="Save" Icon="Save28" Margin="17,387,0,0" VerticalAlignment="Top" Width="324"/>
+            <ui:CardControl Content="" IsEnabled="False" HorizontalAlignment="Left" Margin="10,161,0,0" VerticalAlignment="Top" Height="133" Width="522"/>
+            <Label Content="Game Path ( Should contain FortniteGame and Engine Folders):" HorizontalAlignment="Left" Margin="20,174,0,0" VerticalAlignment="Top" FontSize="18" Foreground="White"/>
+            <ui:TextBox x:Name="FortniteGame_CH1_Path" IsReadOnly="True" PlaceholderText="Please enter The path to the game files..." Margin="20,212,477,0" VerticalAlignment="Top"/>
+            <ui:Button Click="FortniteGame_CH1_Path_Save" Content="Save" Icon="Save28" Margin="20,252,0,0" VerticalAlignment="Top" Width="499"/>
+            <ui:Button Content="..." Click="FortniteGameFileExplorer" Margin="484,215,0,0" VerticalAlignment="Top"/>
+
+        </Grid>
+
+        <Grid
+            x:Name="Loading"
+            Grid.Row="1"
+            Visibility="Hidden" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" Margin="0,0,0,300">
+
+            </Grid>
+            <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,65,0,0">
+                <ui:ProgressRing IsIndeterminate="True" >
+                    <ui:ProgressRing.BitmapEffect>
+                        <DropShadowBitmapEffect
+                            ShadowDepth="15"/>
+                    </ui:ProgressRing.BitmapEffect>
+                </ui:ProgressRing>
+                <TextBlock
+                    Margin="0,12,0,0"
+                    Foreground="White"
+                    FontSize="16"
+                    FontWeight="Medium"
+                    Text="Loading..."
+                     x:Name="loadingLabel"
+                    TextAlignment="Center"
+                    TextWrapping="Wrap" />
+            </StackPanel>
+        </Grid>
+
+        <ui:Snackbar x:Name="snakeBarNot" Timeout="7000" Margin="24,492,24,0" VerticalAlignment="Top"/>
+        <ui:CardControl VerticalAlignment="Top" IsEnabled="False" Height="48"/>
+        <ui:TitleBar
+            Title="OG Launcher"
+            ShowMaximize="False"
+            />
+    </Grid>
+</Window>
